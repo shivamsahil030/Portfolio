@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Projects — Shivam</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">S<span>hivam</span></a>
+  <a href="index.html" class="back-btn">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Portfolio
+  </a>
+</nav>
+
+<div class="page-header">
+  <div class="header-inner">
+    <div class="page-badge">🗂️ All Work</div>
+    <h1 class="page-title">All <span>Projects</span></h1>
+    <p class="page-sub">A complete collection of my frontend projects — from UI designs to full web applications.</p>
+  </div>
+</div>
+
+<div class="filter-wrap">
+  <div class="filter-tabs">
+    <button class="filter-btn active" onclick="filter('all', this)">All</button>
+    <button class="filter-btn" onclick="filter('html-css', this)">HTML / CSS</button>
+    <button class="filter-btn" onclick="filter('javascript', this)">JavaScript</button>
+    <button class="filter-btn" onclick="filter('figma', this)">Figma</button>
+  </div>
+</div>
+
+<div class="projects-section">
+  <div class="projects-wrap">
+    <div class="all-projects-grid" id="projectsGrid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-tags="html-css javascript figma" onmousemove="cardGlow(event,this)">
+        <div class="card-img"><img src="Laundarywallah.png" alt="Laundary Wallaah UI"></div>
+        <div class="card-body">
+          <div class="card-top"><div class="card-title">Laundary Wallaah UI</div><div class="card-year">2026</div></div>
+          <p class="card-desc">A Real-World Frontend Project Focused on Responsive Design, Clean UI, and Enhanced User Experience.</p>
+          <div class="card-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Figma</span></div>
+          <div class="card-actions">
+            <a href="https://laundary-wallaah-services.netlify.app/" target="_blank" class="card-btn card-btn-primary">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/><path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"/></svg>Live Demo
+            </a>
+            <a href="https://github.com/shivamsahil030/Laundary-wallaah-UI" target="_blank" class="card-btn card-btn-outline">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-tags="html-css" onmousemove="cardGlow(event,this)">
+        <div class="card-img"><img src="Bella-Vista.png" alt="Bella Vista Italian Restaurant"></div>
+        <div class="card-body">
+          <div class="card-top"><div class="card-title">Bella Vista Italian Restaurant</div><div class="card-year">2026</div></div>
+          <p class="card-desc">A beautiful restaurant website with authentic Italian cuisine theme, menu showcase and reservation system.</p>
+          <div class="card-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+          <div class="card-actions">
+            <a href="https://bella-vista-italian-resturant.netlify.app/" target="_blank" class="card-btn card-btn-primary">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/><path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"/></svg>Live Demo
+            </a>
+            <a href="https://github.com/shivamsahil030/Bella-Vista-UI" target="_blank" class="card-btn card-btn-outline">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-tags="html-css" onmousemove="cardGlow(event,this)">
+        <div class="card-img"><img src="Time-to-trade.png" alt="Time To Trade"></div>
+        <div class="card-body">
+          <div class="card-top"><div class="card-title">Time-To-Trade Learning Platform</div><div class="card-year">2025</div></div>
+          <p class="card-desc">A trading education platform to unlock your potential with expert trading education and financial success.</p>
+          <div class="card-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+          <div class="card-actions">
+            <a href="https://time-to-trade.netlify.app/" target="_blank" class="card-btn card-btn-primary">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/><path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"/></svg>Live Demo
+            </a>
+            <a href="https://github.com/shivamsahil030/Time-To-Trade" target="_blank" class="card-btn card-btn-outline">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD MORE PROJECTS — just duplicate a card above and fill in your details! -->
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Shivam.</div>
+  <p>© 2026 Shivam. All projects.</p>
+  <a href="index.html" class="back-btn">← Back to Portfolio</a>
+</footer>
+
+<script>
+  function cardGlow(e, card) {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100) + '%');
+    card.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100) + '%');
+  }
+
+  function filter(tag, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (tag === 'all' || card.dataset.tags.includes(tag)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+</script>
+</body>
+</html>

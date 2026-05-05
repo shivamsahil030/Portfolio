@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivam — Frontend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="logo">S<span>hivam</span></div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+    </ul>
+    <div class="burger" id="burgerBtn"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu">✕</button>
+    <a href="#hero" onclick="closeMobile()">Home</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="projects.html" onclick="closeMobile()">Projects</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#contact" onclick="closeMobile()">Contact Me</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 Available for Freelance</div>
+        <h1>Hi, I'm<br><span class="blue">Shivam</span></h1>
+        <p class="hero-sub"><span id="typedText"></span><span class="typed-cursor">|</span></p>
+        <p class="hero-para">I craft pixel-perfect, performant interfaces that turn ideas into seamless digital
+          experiences. Passionate about clean code and delightful UX.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+              <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+            </svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar-ring">
+          <div class="hero-avatar-inner">
+            <svg class="dev-svg" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="130" cy="130" r="100" fill="rgba(56,189,248,0.05)" />
+              <rect x="50" y="80" width="160" height="110" rx="8" fill="#182236" stroke="rgba(56,189,248,0.3)"
+                stroke-width="1.5" />
+              <rect x="56" y="86" width="148" height="98" rx="5" fill="#0f172a" />
+              <rect x="115" y="190" width="30" height="16" rx="3" fill="#182236" stroke="rgba(56,189,248,0.2)"
+                stroke-width="1" />
+              <rect x="100" y="205" width="60" height="5" rx="2.5" fill="#182236" stroke="rgba(56,189,248,0.2)"
+                stroke-width="1" />
+              <rect x="66" y="96" width="55" height="5" rx="2.5" fill="rgba(129,140,248,0.7)" />
+              <rect x="124" y="96" width="25" height="5" rx="2.5" fill="rgba(56,189,248,0.5)" />
+              <rect x="72" y="107" width="40" height="4" rx="2" fill="rgba(74,222,128,0.6)" />
+              <rect x="115" y="107" width="55" height="4" rx="2" fill="rgba(56,189,248,0.4)" />
+              <rect x="66" y="118" width="30" height="4" rx="2" fill="rgba(251,191,36,0.6)" />
+              <rect x="99" y="118" width="65" height="4" rx="2" fill="rgba(129,140,248,0.5)" />
+              <rect x="72" y="129" width="48" height="4" rx="2" fill="rgba(56,189,248,0.6)" />
+              <rect x="66" y="140" width="35" height="4" rx="2" fill="rgba(74,222,128,0.5)" />
+              <rect x="104" y="140" width="42" height="4" rx="2" fill="rgba(56,189,248,0.4)" />
+              <rect x="72" y="151" width="25" height="4" rx="2" fill="rgba(251,191,36,0.5)" />
+              <rect x="100" y="151" width="70" height="4" rx="2" fill="rgba(129,140,248,0.4)" />
+              <rect x="66" y="162" width="50" height="4" rx="2" fill="rgba(56,189,248,0.3)" />
+              <rect x="66" y="173" width="8" height="8" rx="1" fill="rgba(56,189,248,0.9)">
+                <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+              </rect>
+              <circle cx="130" cy="40" r="16" fill="rgba(56,189,248,0.2)" stroke="rgba(56,189,248,0.4)"
+                stroke-width="1.5" />
+              <circle cx="125" cy="38" r="2" fill="rgba(56,189,248,0.7)" />
+              <circle cx="135" cy="38" r="2" fill="rgba(56,189,248,0.7)" />
+              <path d="M 125 44 Q 130 48 135 44" stroke="rgba(56,189,248,0.7)" stroke-width="1.5" fill="none"
+                stroke-linecap="round" />
+              <path d="M 110 70 Q 110 56 130 56 Q 150 56 150 70" fill="rgba(56,189,248,0.15)"
+                stroke="rgba(56,189,248,0.3)" stroke-width="1" />
+              <path d="M 110 68 L 90 82" stroke="rgba(56,189,248,0.4)" stroke-width="3" stroke-linecap="round" />
+              <path d="M 150 68 L 170 82" stroke="rgba(56,189,248,0.4)" stroke-width="3" stroke-linecap="round" />
+              <circle cx="40" cy="50" r="3" fill="rgba(56,189,248,0.4)">
+                <animate attributeName="cy" values="50;44;50" dur="2.5s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="220" cy="60" r="2" fill="rgba(129,140,248,0.5)">
+                <animate attributeName="cy" values="60;54;60" dur="2s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="55" cy="200" r="2.5" fill="rgba(74,222,128,0.4)">
+                <animate attributeName="cy" values="200;194;200" dur="3s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="210" cy="210" r="3" fill="rgba(251,191,36,0.4)">
+                <animate attributeName="cy" values="210;204;210" dur="2.2s" repeatCount="indefinite" />
+              </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="float-card fc1">
+          <div style="color:#4ade80;margin-bottom:2px">✓ Project Deployed</div>
+          <div style="color:#475569;font-size:.65rem">HTML + Tailwind CSS + JavaScript</div>
+        </div>
+        <div class="float-card fc2">
+          <div style="margin-bottom:2px">⚡ 98 Performance</div>
+          <div style="color:#475569;font-size:.65rem">Lighthouse Score</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-box">
+            <div class="about-corner"></div>
+            <div class="about-corner br"></div>
+            <div class="code-block">
+              <span class="cm">// about.js — Shivam's profile</span>
+
+              <span class="kw">const</span> <span class="fn">developer</span> = {
+              name: <span class="str">"Shivam"</span>,
+              role: <span class="str">"Frontend Developer"</span>,
+              location: <span class="str">"India 🇮🇳"</span>,
+              experience: <span class="num">2025</span> - <span class="str">" present"</span>,
+
+              skills: [
+              <span class="str">"HTML"</span>, <span class="str">"CSS"</span>,
+              <span class="str">"JavaScript"</span>, <span class="str">"Figma"</span>,
+              <span class="str">"Tailwind"</span>,
+              ],
+
+              passion: <span class="str">"Building beautiful UIs"</span>,
+              available: <span class="kw">true</span> <span class="cm">// ✓ open to work</span>
+              };
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal reveal-delay-1">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Crafting Digital<br>Experiences</h2>
+          <p class="about-subtitle">Turning ideas into real-world web solutions</p>
+          <p class="about-text">I'm a passionate frontend developer with a love for building clean, responsive, and
+            high-performance web interfaces. I focus on creating experiences that are not only visually appealing but
+            also intuitive and accessible.</p>
+          <p class="about-text">When I'm not coding, I'm exploring new frameworks, contributing to open source, or
+            sketching out new design concepts. I believe great UI is where technology meets art.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num">2025</div>
+              <div class="stat-lbl">Started</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">6+</div>
+              <div class="stat-lbl">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-lbl">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="projects-header">
+        <div>
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <a href="projects.html" class="btn btn-outline" style="white-space:nowrap">View All →</a>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <div class="project-card reveal" onmousemove="cardGlow(event,this)">
+          <div class="card-img">
+            <img src="Laundarywallah.png" alt="Laundary Wallaah UI">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <div class="card-title">Laundary Wallaah UI</div>
+              <div class="card-year">2026</div>
+            </div>
+            <p class="card-desc">A Real-World Frontend Project Focused on Responsive Design, Clean UI, and Enhanced User
+              Experience.</p>
+            <div class="card-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span
+                class="tag">Figma</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://laundary-wallaah-services.netlify.app/" target="_blank"
+                class="card-btn card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                  <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+                </svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/shivamsahil030/Laundary-wallaah-UI" target="_blank"
+                class="card-btn card-btn-outline">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card reveal reveal-delay-1" onmousemove="cardGlow(event,this)">
+          <div class="card-img">
+            <img src="Bella-Vista.png" alt="Bella Vista Italian Restaurant">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <div class="card-title">Bella Vista Italian Restaurant</div>
+              <div class="card-year">2026</div>
+            </div>
+            <p class="card-desc">A beautiful restaurant website with authentic Italian cuisine theme, menu showcase and
+              reservation system.</p>
+            <div class="card-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://bella-vista-italian-resturant.netlify.app/" target="_blank"
+                class="card-btn card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                  <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+                </svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/shivamsahil030/Bella-Vista-UI" target="_blank"
+                class="card-btn card-btn-outline">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card reveal reveal-delay-2" onmousemove="cardGlow(event,this)">
+          <div class="card-img">
+            <img src="Time-to-trade.png" alt="Time To Trade Learning Platform">
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <div class="card-title">Time-To-Trade Learning Platform</div>
+              <div class="card-year">2025</div>
+            </div>
+            <p class="card-desc">A trading education platform to unlock your potential with expert trading education and
+              financial success.</p>
+            <div class="card-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://time-to-trade.netlify.app/" target="_blank" class="card-btn card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                  <path d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+                </svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/shivamsahil030/Time-To-Trade" target="_blank"
+                class="card-btn card-btn-outline">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="skills-grid">
+        <div>
+          <div class="section-label reveal">Skills</div>
+          <h2 class="section-title reveal reveal-delay-1">My Toolkit</h2>
+          <div class="skills-text">
+            <p class="reveal reveal-delay-2">I work with modern web technologies to deliver fast, accessible, and
+              beautiful products. Constantly learning and levelling up.</p>
+          </div>
+          <div style="margin-top:40px">
+            <div class="skills-cat reveal reveal-delay-3">Core Technologies</div>
+            <div class="skill-bars">
+              <div class="skill-item reveal">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">🌐</span> HTML5</div>
+                  <div class="skill-pct">99%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:99%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal reveal-delay-1">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">🎨</span> CSS3</div>
+                  <div class="skill-pct">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:90%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal reveal-delay-2">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">⚡</span> JavaScript</div>
+                  <div class="skill-pct">45%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:45%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal reveal-delay-2">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">⚙️</span> C/C++</div>
+                  <div class="skill-pct">80%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:80%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal reveal-delay-3">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">✏️</span> Figma</div>
+                  <div class="skill-pct">95%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:95%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">🐙</span> Git / GitHub</div>
+                  <div class="skill-pct">85%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:85%"></div>
+                </div>
+              </div>
+              <div class="skill-item reveal">
+                <div class="skill-top">
+                  <div class="skill-name"><span class="skill-icon">⌨️</span> Vs-Code</div>
+                  <div class="skill-pct">90%</div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct:85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="skills-cat reveal" style="margin-top:68px">Tools & Technologies</div>
+          <div class="tools-grid">
+            <div class="tool-chip reveal"><span class="ti">🌐</span><span>HTML5</span></div>
+            <div class="tool-chip reveal reveal-delay-1"><span class="ti">🎨</span><span>CSS3</span></div>
+            <div class="tool-chip reveal reveal-delay-2"><span class="ti">💨</span><span>Tailwind</span></div>
+            <div class="tool-chip reveal reveal-delay-3"><span class="ti">🎨</span><span>Figma</span></div>
+            <div class="tool-chip reveal reveal-delay-3"><span class="ti">✏️</span><span>Canva</span></div>
+            <div class="tool-chip reveal"><span class="ti">🐙</span><span>GitHub</span></div>
+            <div class="tool-chip reveal reveal-delay-1"><span class="ti">⚙️</span><span>C</span></div>
+            <div class="tool-chip reveal reveal-delay-2"><span class="ti">🧠</span><span>C++</span></div>
+            <div class="tool-chip reveal reveal-delay-3"><span class="ti">💡</span><span>Open AI</span></div>
+            <div class="tool-chip reveal reveal-delay-3"><span class="ti">🤖</span><span>Cloud AI</span></div>
+            <div class="tool-chip reveal reveal-delay-3"><span class="ti">⌨️</span><span>Vs-Code</span></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let's Work<br>Together</h2>
+          <p>Have a project in mind or want to discuss opportunities? I'd love to hear from you. Reach out — I usually
+            respond within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:shivamsahil030@gmail.com" class="c-link">
+              <div class="c-link-icon">📧</div>
+              <div>
+                <div style="color:var(--text);font-weight:500;font-size:.88rem;margin-bottom:2px">Email Me</div>
+                <div style="font-size:.78rem">shivamsahil030@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/shivamkumar509" target="_blank" class="c-link">
+              <div class="c-link-icon">💼</div>
+              <div>
+                <div style="color:var(--text);font-weight:500;font-size:.88rem;margin-bottom:2px">LinkedIn</div>
+                <div style="font-size:.78rem">linkedin.com/in/shivamkumar509</div>
+              </div>
+            </a>
+            <a href="https://github.com/shivamsahil030" target="_blank" class="c-link">
+              <div class="c-link-icon">🐙</div>
+              <div>
+                <div style="color:var(--text);font-weight:500;font-size:.88rem;margin-bottom:2px">GitHub</div>
+                <div style="font-size:.78rem">github.com/shivamsahil030</div>
+              </div>
+            </a>
+            <a href="https://x.com/ShivamKumar509" target="_blank" class="c-link">
+              <div class="c-link-icon">🐦</div>
+              <div>
+                <div style="color:var(--text);font-weight:500;font-size:.88rem;margin-bottom:2px">Twitter</div>
+                <div style="font-size:.78rem">x.com/ShivamKumar509</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- NETLIFY FORM -->
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <div style="margin-bottom:28px">
+            <h3
+              style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:6px">
+              Send a Message</h3>
+            <p style="color:var(--muted);font-size:.85rem">I'll get back to you as soon as possible.</p>
+          </div>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none"><input name="bot-field"></p>
+            <div class="form-row">
+              <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name"
+                  placeholder="Your name" required></div>
+              <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email"
+                  placeholder="your@email.com" required></div>
+            </div>
+            <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" name="subject"
+                placeholder="Project inquiry / Collaboration"></div>
+            <div class="form-group"><label for="fmsg">Message</label><textarea id="fmsg" name="message"
+                placeholder="Tell me about your project..." required></textarea></div>
+            <button type="submit" class="btn-submit">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Shivam.</div>
+    <p>© 2026 Shivam. Crafted with ❤️ &amp; lots of 💻</p>
+    <div class="footer-links">
+      <a href="https://github.com/shivamsahil030" target="_blank" title="GitHub">🐙</a>
+      <a href="https://www.linkedin.com/in/shivamkumar509" target="_blank" title="LinkedIn">💼</a>
+      <a href="https://x.com/ShivamKumar509" target="_blank" title="Twitter">🐦</a>
+      <a href="mailto:shivamsahil030@gmail.com" title="Email">📧</a>
+    </div>
+  </footer>
+
+  <script>
+    const phrases = ['Frontend Developer', 'Web Designer', 'Hustler', 'Creative Coder'];
+    let pi = 0, ci = 0, deleting = false, pause = false;
+    const el = document.getElementById('typedText');
+    function type() {
+      if (pause) { setTimeout(type, 1800); pause = false; return; }
+      const word = phrases[pi];
+      if (!deleting) {
+        el.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { pause = true; deleting = true; }
+        setTimeout(type, 90);
+      } else {
+        el.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+        setTimeout(type, 50);
+      }
+    }
+    type();
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('.skill-fill').forEach(b => b.classList.add('animated'));
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    const skillObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b => b.classList.add('animated')); });
+    }, { threshold: 0.2 });
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) skillObs.observe(skillsSection);
+
+    function cardGlow(e, card) {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100) + '%');
+      card.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100) + '%');
+    }
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').style.background = window.scrollY > 50 ? 'rgba(15,23,42,0.95)' : 'rgba(15,23,42,0.7)';
+    });
+
+    document.getElementById('burgerBtn').onclick = () => document.getElementById('mobileMenu').classList.add('open');
+    document.getElementById('closeMenu').onclick = closeMobile;
+    function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+
+</html>
