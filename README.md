@@ -33,4 +33,6 @@ https://github.com/shivamsahil030/Portfolio.git
 
 Shivam Sahil
 
+## Preview
 
+![Portfolio Screenshot](protfolio-Screenshort.png)
