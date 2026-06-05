@@ -35,4 +35,4 @@ Shivam Sahil
 
 ## Preview
 
-![Portfolio Screenshot](protfolio-Screenshort.png)
+![Portfolio Screenshot](Protfolio-Screenshort.png)
