@@ -1,38 +1,45 @@
-# Portfolio
+# 🚀 Portfolio Website
 
-Welcome to my personal portfolio website.
+Welcome to my personal portfolio website!
 
-This portfolio showcases my frontend development journey, skills, and projects. Built using HTML, CSS, and JavaScript, it features a modern UI, responsive design, and a smooth user experience across all devices.
+This portfolio showcases my frontend development journey, skills, and projects. Built using HTML, CSS, and JavaScript, it features a modern user interface, responsive design, and a smooth experience across all devices.
 
-## Tech Stack
+## 📸 Preview
+
+![Portfolio Screenshot](Protfolio-Screenshort.png)
+
+## 🛠️ Tech Stack
 
 * HTML5
 * CSS3
 * JavaScript
 
-## Features
+## ✨ Features
 
 * Responsive Design
 * Modern UI/UX
 * Project Showcase
 * Skills Section
 * Contact Information
+* Mobile-Friendly Layout
 
-## Live Demo
+## 🌐 Live Demo
 
-https://myportfolio-shivamm.netlify.app/
+🔗 https://myportfolio-shivamm.netlify.app/
 
+## 📂 Repository
 
+🔗 https://github.com/shivamsahil030/Portfolio
 
-## Github
+## 👨‍💻 Author
 
-https://github.com/shivamsahil030/Portfolio.git
+**Shivam Sahil**
 
+Aspiring Full-Stack Web Developer passionate about building responsive and user-friendly web applications.
 
-## Author
+* GitHub: https://github.com/shivamsahil030
+* LinkedIn: Add your LinkedIn profile link here
 
-Shivam Sahil
+## 📬 Feedback
 
-## Preview
-
-![Portfolio Screenshot](Protfolio-Screenshort.png)
+If you have any suggestions or feedback, feel free to connect with me.
